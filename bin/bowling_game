@@ -1,0 +1,29 @@
+#!/usr/bin/env ruby
+
+
+lib = File.expand_path '../lib', __FILE__
+$LOAD_PATH.unshift lib unless $LOAD_PATH.include? lib
+
+
+require 'highline/import'
+require 'formatador'
+require 'bowling'
+
+
+
+game = Bowling::Game.new
+
+game.frames.each_with_index.map do |frame, i|
+	Formatador.display_line "[green]Frame #{i}: ===========[/]"
+
+	frame.balls.each_with_index.map do |ball, j|
+		ball.knocked_pins = ask( "Score for ball #{j}?", Integer ){ |q| 
+			q.default = 0
+			q.in[0,10]
+		}
+	end
+end
+
+Formatador.display_line "[red]Total Game Score: #{game.score}[/]"
+
+
