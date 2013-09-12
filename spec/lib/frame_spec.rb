@@ -2,9 +2,7 @@ require 'spec_helper'
 
 
 describe Bowling::Frame do
-
-  subject( :row_number ){ 1 }
-  subject( :instance   ){ described_class.new row_number, game }
+  subject( :instance ){ described_class.new 1, game }
 
 
   #= Lets ===
@@ -40,8 +38,6 @@ describe Bowling::Frame do
   #= General Specs ===
 
   describe 'with perfect final frame' do
-    let( :row_number ){ 9 }
-
     subject{ described_class.new 9, game, perfect_final_frame }
 
     specify{ subject.balls.length.should == 3  }
