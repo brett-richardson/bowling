@@ -18,7 +18,57 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Installing this gem will add a simple 'bowling_game' utility to the $PATH and it
+will ask you to input the scores for each ball, then calculate the score.
+
+Sample output:
+
+```
+  === Starting Game ===
+ - Score for frame 1 ball 1?  |0|
+10
+ - Score for frame 1 ball 2?  |0|
+
+ - Score for frame 2 ball 1?  |0|
+10
+ - Score for frame 2 ball 2?  |0|
+
+ - Score for frame 3 ball 1?  |0|
+5
+ - Score for frame 3 ball 2?  |0|
+5
+ - Score for frame 4 ball 1?  |0|
+4
+ - Score for frame 4 ball 2?  |0|
+4
+ - Score for frame 5 ball 1?  |0|
+3
+ - Score for frame 5 ball 2?  |0|
+2
+ - Score for frame 6 ball 1?  |0|
+6
+ - Score for frame 6 ball 2?  |0|
+3
+ - Score for frame 7 ball 1?  |0|
+10
+ - Score for frame 7 ball 2?  |0|
+
+ - Score for frame 8 ball 1?  |0|
+5
+ - Score for frame 8 ball 2?  |0|
+
+ - Score for frame 9 ball 1?  |0|
+10
+ - Score for frame 9 ball 2?  |0|
+
+ - Score for frame 10 ball 1?  |0|
+10
+ - Score for frame 10 ball 2?  |0|
+10
+ - Score for frame 10 ball 3?  |0|
+10
+  Total Game Score: 161
+```
 
 ## Contributing
 
